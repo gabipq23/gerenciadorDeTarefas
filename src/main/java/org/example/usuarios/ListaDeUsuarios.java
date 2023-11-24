@@ -9,7 +9,6 @@ public class ListaDeUsuarios {
     @Getter
     private List<Usuario> usuarios;
 
-
     public ListaDeUsuarios(List<Tarefa> tarefas) {
         usuarios = new ArrayList<>();
         for (Tarefa tarefa : tarefas){
@@ -17,7 +16,6 @@ public class ListaDeUsuarios {
             if(!usuarioJaFoiAdicionado(responsavel)){
                 usuarios.add(new Usuario(responsavel));
             }
-
         }
     }
 
